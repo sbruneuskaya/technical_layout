@@ -189,6 +189,44 @@ a {
     background: black;
 }
 
+.point1 {
+    animation: changeColor 3s ease-in infinite;
+}
+
+.point2 {
+    animation: changeColor 3s ease-in infinite;
+    animation-delay: 1s;
+}
+
+.point3 {
+    animation: changeColor 3s ease-in infinite;
+    animation-delay: 2s;
+}
+
+@keyframes changeColor {
+    0% {
+        width: 15px;
+        height: 15px;
+        transform: scale(5px, 5px);
+        /* box-shadow: 0px 0px 5px 5px rgb(27, 27, 27); */
+    }
+    50% {
+        background: black;
+        width: 7px;
+        height: 7px;
+    }
+    75% {
+        background: black;
+        width: 7px;
+        height: 7px;
+    }
+    100% {
+        background: black;
+        width: 7px;
+        height: 7px;
+    }
+}
+
 /* end of 3 points block */
 
 /* animation Block */
